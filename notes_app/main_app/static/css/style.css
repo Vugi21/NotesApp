@@ -13,6 +13,31 @@ body {
     text-align: right;
   }
   a {
-    color: rgba(208, 17, 128, 0.846);
+    color: rgb(0, 0, 0);
+  }
+
+
+  .section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  .homeTitle {
+    color: rgb(50, 59, 95);
   }
   
+  .signUpBtn {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    background-color: #1976D2;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+    display: inline-block;
+    min-height: 40px;
+  }
