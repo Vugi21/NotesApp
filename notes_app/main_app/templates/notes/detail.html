@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Note Details</h1>
+
+<div class="row">
+  <div class="col s6">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">{{ note.title }}</span>
+        <p>Detailed Content: {{ note.details }}</p>
+        {% if note.time_modified  %}
+        <p> Note Date (last date): {{ note.time_modified }}</p>
+        {% else %}
+          <p> Note Date (last date): {{ note.time_created }}</p>
+        {% endif %}
+      </div>
+      <div class="card-action">
+        <a href="{% url 'notes_update' note.id %}">Edit</a>
+        <a href="{% url 'notes_delete' note.id %}">Delete</a>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+
+ <hr>
+
+{% endblock %}

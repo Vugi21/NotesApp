@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>List of Notes</h1>
+
+{% for note in notes %}
+<a href="/notes/{{ note.id }}">
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ note.title }}</span>
+      <p>Note Content: {{ note.details }}</p>
+      {% if note.time_modified  %}
+        <p> Note Date (last date): {{ note.time_modified }}</p>
+      {% else %}
+        <p> Note Date (last date): {{ note.time_created }}</p>
+      {% endif %}
+    </div>
+  </div>
+</a>  
+{% endfor %}
+
+{% endblock %}
