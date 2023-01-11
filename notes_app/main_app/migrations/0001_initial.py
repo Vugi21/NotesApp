@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('details', models.TextField(max_length=10000)),
                 ('time_modified', models.DateTimeField(auto_now=True)),
                 ('time_created', models.DateTimeField(auto_now_add=True)),
-            ],
+            ],            
         ),
+             
     ]

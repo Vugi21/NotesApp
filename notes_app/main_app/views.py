@@ -13,8 +13,8 @@ import boto3
 from .models import Note, Photo
 
 
-S3_BASE_URL = 'https://s3-us-east-1.amazonaws.com/'
-BUCKET = 'notesappproject'
+S3_BASE_URL = 'https://s3-ca-central-1.amazonaws.com/'
+BUCKET = 'notesappproj'
 
 # Define the home view
 def home(request):
