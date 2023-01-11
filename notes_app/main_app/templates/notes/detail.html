@@ -20,6 +20,12 @@
         <a href="{% url 'notes_delete' note.id %}">Delete</a>
       </div>
     </div>
+    <!-- Insert photo markup below this comment -->
+    {% for photo in note.photo_set.all %}
+      <img class="responsive-img card-panel" src="{{photo.url}}">
+    {% empty %}
+      <div class="card-panel teal-text center-align">No Photos Uploaded</div>
+    {% endfor %}
   </div>
   
  </div>
