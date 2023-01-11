@@ -18,3 +18,10 @@ class Note(models.Model):
 
     def get_absolute_url(self):
      return reverse('detail', kwargs={'note_id': self.id})
+
+class Photo(models.Model):
+    url = models.CharField(max_length=200)
+    note = models.ForeignKey(Note, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Photo for note_id: {self.note_id} @{self.url}"
