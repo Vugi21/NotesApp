@@ -24,4 +24,4 @@ class Photo(models.Model):
     note = models.ForeignKey(Note, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"Photo for cat_id: {self.cat_id} @{self.url}"
+        return f"Photo for note_id: {self.note_id} @{self.url}"

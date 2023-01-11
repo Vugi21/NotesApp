@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from .models import Note, Photo
 
 # Create your views here.
 from django.http import HttpResponse
@@ -11,6 +10,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 import uuid
 import boto3
+from .models import Note, Photo
+
 
 S3_BASE_URL = 'https://s3-us-east-1.amazonaws.com/'
 BUCKET = 'notesappproject'
