@@ -3,7 +3,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>List of Notes</h1>
+<h1>Notes</h1>
 <form method="GET" class="search-form" action="{% url 'search_query' %}">
   {% csrf_token %}
   <input class="search-input" type="text"  name="searchNote" placeholder="Search Notes">
@@ -14,11 +14,11 @@
   <div class="card">
     <div class="card-content">
       <span class="card-title">{{ note.title }}</span>
-      <p>Note Content: {{ note.details }}</p>
+      <p>Details: {{ note.details }}</p>
       {% if note.time_modified  %}
-        <p> Note Date (last date): {{ note.time_modified }}</p>
+        <p class="modfiedDate"> Last Modified: {{ note.time_modified }}</p>
       {% else %}
-        <p> Note Date (last date): {{ note.time_created }}</p>
+        <p class="modfiedDate"> Last Modified: {{ note.time_created }}</p>
       {% endif %}
     </div>
   </div>
