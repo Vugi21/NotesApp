@@ -5,6 +5,9 @@ body {
   background-color: #dadede;
 }
 
+h1 {
+  color: rgb(50, 59, 95);
+}
 main {
   flex: 1 0 auto;
 }
@@ -50,4 +53,15 @@ background-color: blue;
   padding: 12px;
   display: inline-block;
   min-height: 40px;
+}
+
+.signUpBtnA {
+  color: white;
+}
+
+.modfiedDate {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
