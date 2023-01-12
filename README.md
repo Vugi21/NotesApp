@@ -1,6 +1,6 @@
 <h1>NotesApp</h1>
 
-NotesApp is a free and simple way to store whatever is on your mind. With NotesApp, you are provided the ability to create, read, edit and delete your notes seamlessly. Need to add pictures to that specific note? NotesApp allows you to add multiple pictures to your notes worry-free and quickly with the help of AWS. Your notes are secured and safe and only you can view your own personal thoughts and ideas. Start keeping track of your ideas today! 
+NotesApp is a free and simple way to store whatever is on your mind. With NotesApp, you are provided the ability to create, read, edit and delete your notes seamlessly. Need to add pictures to that specific note? NotesApp allows you to upload multiple pictures to your notes quickly and worry-free with the help of AWS. Your notes are secured and safe and only you can view your own personal thoughts and ideas. Start keeping track of your ideas today! 
 
 <h2>Screenshots</h2>
 
