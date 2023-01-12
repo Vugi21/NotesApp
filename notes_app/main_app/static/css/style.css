@@ -21,7 +21,11 @@ background-color: rgba(185, 247, 237, 0.731);
 }
 .card-action {
 background-color: blue;
-
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(16, 113, 97, 0.731);
+  opacity: 1; /* Firefox */
+  font-style: italic;
 }
 .section{
   display: flex;

@@ -4,7 +4,7 @@
 {% block content %}
 
 <h1>List of Notes</h1>
-<form method="GET" action="{% url 'search_query' %}">
+<form method="GET" class="search-form" action="{% url 'search_query' %}">
   {% csrf_token %}
   <input class="search-input" type="text"  name="searchNote" placeholder="Search Notes">
   <input class="btn" type="submit"  name="search" value="Search">                
