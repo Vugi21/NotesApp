@@ -8,16 +8,15 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-<<<<<<< HEAD
-=======
+from django.db.models import Q
+
 import uuid
 import boto3
 from .models import Note, Photo
 
 
 S3_BASE_URL = 'https://s3-ca-central-1.amazonaws.com/'
-BUCKET = 'notesappproj'
->>>>>>> 0d426403402b4ec447ea1feb05dff56dd64e14f3
+BUCKET = 'notesappproj2'
 
 # Define the home view
 def home(request):
@@ -65,6 +64,18 @@ class NoteDelete(LoginRequiredMixin, DeleteView):
   model = Note
   success_url = '/notes/'
 
+class NoteSearch(LoginRequiredMixin, ListView):
+  model = Note
+  template_name = 'notes/index.html'
+  context_object_name = 'notes'
+
+
+  def get_queryset(self):
+    query = self.request.GET.get('searchNote')
+    return Note.objects.filter(Q(title__icontains=query) | Q(details__icontains=query),  user=self.request.user)
+
+
+
 
 
 def signup(request):
@@ -85,8 +96,7 @@ def signup(request):
   form = UserCreationForm()
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
-<<<<<<< HEAD
-=======
+
 
 def add_photo(request, note_id):
     # photo-file will be the "name" attribute on the <input type="file">
@@ -106,4 +116,4 @@ def add_photo(request, note_id):
         except:
             print('An error occurred uploading file to S3')
     return redirect('detail', note_id=note_id)
->>>>>>> 0d426403402b4ec447ea1feb05dff56dd64e14f3
+

@@ -12,9 +12,6 @@ urlpatterns = [
   path('notes/<int:pk>/update/', views.NoteUpdate.as_view(), name='notes_update'),
   path('notes/<int:pk>/delete/', views.NoteDelete.as_view(), name='notes_delete'),
   path('accounts/signup/', views.signup, name='signup'),
-<<<<<<< HEAD
-       
-=======
-  path('notes/<int:note_id>/add_photo/', views.add_photo, name='add_photo')
->>>>>>> 0d426403402b4ec447ea1feb05dff56dd64e14f3
+  path('notes/<int:note_id>/add_photo/', views.add_photo, name='add_photo'),
+  path('notes/search/', views.NoteSearch.as_view(), name='search_query')
 ]
