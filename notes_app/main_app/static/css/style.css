@@ -5,6 +5,9 @@ body {
   background-color: #dadede;
 }
 
+h1 {
+  color: rgb(50, 59, 95);
+}
 main {
   flex: 1 0 auto;
 }
@@ -50,4 +53,37 @@ background-color: blue;
   padding: 12px;
   display: inline-block;
   min-height: 40px;
+}
+
+.signUpBtnA {
+  color: white;
+}
+
+.modfiedDate {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.viewNotesBtn {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #1976D2;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px;
+  display: inline-block;
+  min-height: 40px;
+}
+
+.viewNotesBtnA {
+  color: white;
+}
+
+.card-title {
+  font-weight: 400;
 }
