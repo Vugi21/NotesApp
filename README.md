@@ -24,6 +24,7 @@ NotesApp is a free and simple way to store whatever is on your mind. With NotesA
 <h2>Getting Started</h2>
 
 <a href="https://trello.com/b/zC3AmA5H/project3">Trello Board</a>
+
 <a href="">NotesApp Application</a>
 
 <h2>Next Steps</h2>
@@ -33,4 +34,3 @@ NotesApp is a free and simple way to store whatever is on your mind. With NotesA
   <li>Add a checklist feature within the note itself</li>
   <li>Create a Mobile dedicated version</li>
 
-</ul>
