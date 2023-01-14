@@ -13,11 +13,15 @@ NotesApp is a free and simple way to store whatever is on your mind. With NotesA
  
 # <h2>Screenshots</h2>
 
-<img src="notes_app/main_app/static/screenshots/home_page.jpg"/>
+<img src="notes_app/main_app/static/screenshots/home_page.png"/>
 
 <hr>
 
-<img src="notes_app/main_app/static/screenshots/user_index_view.jpg"/>
+<img src="notes_app/main_app/static/screenshots/user_index_view.png"/>
+
+<hr>
+
+<img src="notes_app/main_app/static/screenshots/details.png"/>
 
 <h2>Getting Started</h2>
 
