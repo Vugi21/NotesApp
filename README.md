@@ -35,5 +35,5 @@ NotesApp is a free and simple way to store whatever is on your mind. With NotesA
   <li>Implement edit and delete photo ability</li>
   <li>Add a checklist feature within the note itself</li>
   <li>Create a Mobile dedicated version</li>
-  <li>Fix photo upload feature in Heroku app (it works on localhost)</li>
+  <li>Note sharing functionality</li>
 </ul>
